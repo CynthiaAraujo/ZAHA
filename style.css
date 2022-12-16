@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.pink {
+  --bg-color: #FFF7e4;
+  --text-color: #777f99;
+  --primary-color:white;
+  --primary-color-dark: #eecfb2;
+  
+
+}
+
+body {
+  background: var(--bg-color);
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body{
+  background-image: url('https://images.msha.ke/ca4cf415-6c65-4152-aa0b-94ea6208456a?auto=format%2Ccompress&cs=tinysrgb&q=30&w=828');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1,h3{
+  color: white;
+  margin-top: 1.5rem;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1080px;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  /* margin-top: 80px; */
+  margin-bottom: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li + li {
+  margin-top: 16px;
+}
+
+
+ul li a {
+  height: 53px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: black;
+  /* text-transform: uppercase; */
+  font-size: 12px;
+  border-radius: 6px;
+
+transition: background(200ms);
+}
+
+ul li a img{
+  display: flex;
+  height: 100%;
+ 
+}
+ul li a:hover {
+  background: var(--primary-color-dark);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 200ms;
+  margin: 16px 0;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+ footer a {
+   color: white;
+   margin-top: 40px;
+ }
